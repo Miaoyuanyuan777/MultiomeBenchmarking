@@ -1,0 +1,2 @@
+## 在vertcal整合时，直接将RNA和ATAC按照相同cells进行concat，miltivi可以自动整合不同modality
+## 在horizontal整合时，先将RNA和ATAC按照相同cells进行concat，然后在organize的时候输入拼接后的两个batch的adata，会自动为这两个adata的.obs['modality']添加不同来源，在setup_anndata的时候作为batch_key也就是batch的标识进行batch的矫正
